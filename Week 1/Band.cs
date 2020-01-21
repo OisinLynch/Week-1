@@ -37,7 +37,7 @@ namespace Week_1
 
         public override string ToString()
         {
-            return $"{Name} - {ActivityDate.ToShortDateString()}";
+            return $"{BandName}";
         }
     }
 }

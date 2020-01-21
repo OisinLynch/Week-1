@@ -31,42 +31,42 @@ namespace Week_1
             //Create Bands
             Band b1 = new Band()
             {
-                BandName = "sfdsfsdf",
+                BandName = "F",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             Band b2 = new Band()
             {
-                BandName = "sfdsfsdf",
+                BandName = "E",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             Band b3 = new Band()
             {
-                BandName = "sfdsfsdf",
+                BandName = "A",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             Band b4 = new Band()
             {
-                BandName = "sfdsfsdf",
+                BandName = "B",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             Band b5 = new Band()
             {
-                BandName = "sfdsfsdf",
+                BandName = "D",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             Band b6 = new Band()
             {
-                BandName = "sfdsfsdf",
+                BandName = "C",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
@@ -78,6 +78,9 @@ namespace Week_1
             bands.Add(b4);
             bands.Add(b5);
             bands.Add(b6);
+
+            //Sort by date
+            bands.Sort();
 
             //Display the activities in the listbox
             lbxBands.ItemsSource = null;
