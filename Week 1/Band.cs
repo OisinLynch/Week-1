@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week_1
 {
-    class Band : IComparable
+    public abstract class Band : IComparable
     {
         //Properties
         public string BandName { get; set; }
@@ -39,5 +39,20 @@ namespace Week_1
         {
             return $"{BandName}";
         }
+    }
+
+    public class RockBand : Band
+    {
+
+    }
+
+    public class PopBand : Band
+    {
+
+    }
+
+    public class IndieBand : Band
+    {
+
     }
 }

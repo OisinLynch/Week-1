@@ -28,43 +28,45 @@ namespace Week_1
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //Create Bands
-            Band b1 = new Band()
+            //Create Rock Bands
+            RockBand rb1 = new RockBand()
             {
                 BandName = "F",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
-            Band b2 = new Band()
+            RockBand rb2 = new RockBand()
             {
                 BandName = "E",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
-            Band b3 = new Band()
+            //Create Pop Bands
+            PopBand pb1 = new PopBand()
             {
                 BandName = "A",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
-            Band b4 = new Band()
+            PopBand pb2 = new PopBand()
             {
                 BandName = "B",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
-            Band b5 = new Band()
+            //Create Indie Bands
+            IndieBand ib1 = new IndieBand()
             {
                 BandName = "D",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
-            Band b6 = new Band()
+            IndieBand ib2 = new IndieBand()
             {
                 BandName = "C",
                 YearFormed = 2010,
@@ -72,12 +74,12 @@ namespace Week_1
             };
 
             //Display list in the list box
-            bands.Add(b1);
-            bands.Add(b2);
-            bands.Add(b3);
-            bands.Add(b4);
-            bands.Add(b5);
-            bands.Add(b6);
+            bands.Add(rb1);
+            bands.Add(rb2);
+            bands.Add(pb1);
+            bands.Add(pb2);
+            bands.Add(ib1);
+            bands.Add(ib2);
 
             //Sort by date
             bands.Sort();
