@@ -31,14 +31,14 @@ namespace Week_1
             //Create Rock Bands
             RockBand rb1 = new RockBand()
             {
-                BandName = "F",
+                BandName = "Rock Band F",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             RockBand rb2 = new RockBand()
             {
-                BandName = "E",
+                BandName = "Rock Band E",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
@@ -46,14 +46,14 @@ namespace Week_1
             //Create Pop Bands
             PopBand pb1 = new PopBand()
             {
-                BandName = "A",
+                BandName = "Pop Band A",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             PopBand pb2 = new PopBand()
             {
-                BandName = "B",
+                BandName = "Pop Band B",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
@@ -61,14 +61,14 @@ namespace Week_1
             //Create Indie Bands
             IndieBand ib1 = new IndieBand()
             {
-                BandName = "D",
+                BandName = "Indie Band D",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
 
             IndieBand ib2 = new IndieBand()
             {
-                BandName = "C",
+                BandName = "Indie Band C",
                 YearFormed = 2010,
                 BandMembers = "sdfasdf"
             };
