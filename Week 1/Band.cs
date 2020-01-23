@@ -10,11 +10,11 @@ namespace Week_1
     {
         //Properties
         public string BandName { get; set; }
-        public int YearFormed { get; set; }
+        public string YearFormed { get; set; }
         public string BandMembers { get; set; }
 
         //Constructors
-        public Band(string bandName, int yearFormed, string bandMembers)
+        public Band(string bandName, string yearFormed, string bandMembers)
         {
             BandName = bandName;
             YearFormed = yearFormed;
@@ -37,7 +37,7 @@ namespace Week_1
 
         public override string ToString()
         {
-            return $"{BandName}";
+            return $"{BandName} - ";
         }
     }
 

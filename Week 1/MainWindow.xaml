@@ -10,7 +10,7 @@
         <TextBlock x:Name="tblkBands" HorizontalAlignment="Left" Margin="141,78,0,0" TextWrapping="Wrap" Text="Bands" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.341,0.847"/>
         <TextBlock x:Name="tblkGenreSelect" HorizontalAlignment="Left" Margin="141,120,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top" RenderTransformOrigin="0.735,0.326"/>
         <ComboBox x:Name="cmbSelesctGenre" HorizontalAlignment="Left" Margin="203,120,0,0" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="176" Margin="141,170,0,0" VerticalAlignment="Top" Width="182"/>
+        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="176" Margin="141,170,0,0" VerticalAlignment="Top" Width="182" SelectionChanged="LbxBands_SelectionChanged"/>
         <TextBlock x:Name="tblkBandInfo" HorizontalAlignment="Left" Margin="534,61,0,0" TextWrapping="Wrap" Text="Band Information" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <TextBlock x:Name="tblkFormed" HorizontalAlignment="Left" Margin="534,120,0,0" TextWrapping="Wrap" Text="Formed:" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkMembers" HorizontalAlignment="Left" Margin="534,157,0,0" TextWrapping="Wrap" Text="Members:" VerticalAlignment="Top"/>

@@ -20,6 +20,7 @@ namespace Week_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        static Random r = new Random();
         List<Band> bands = new List<Band>();
         public MainWindow()
         {
@@ -32,14 +33,14 @@ namespace Week_1
             RockBand rb1 = new RockBand()
             {
                 BandName = "Rock Band F",
-                YearFormed = 2010,
+                YearFormed = "2010",
                 BandMembers = "sdfasdf"
             };
 
             RockBand rb2 = new RockBand()
             {
                 BandName = "Rock Band E",
-                YearFormed = 2010,
+                YearFormed = "2011",
                 BandMembers = "sdfasdf"
             };
 
@@ -47,14 +48,14 @@ namespace Week_1
             PopBand pb1 = new PopBand()
             {
                 BandName = "Pop Band A",
-                YearFormed = 2010,
+                YearFormed = "2012",
                 BandMembers = "sdfasdf"
             };
 
             PopBand pb2 = new PopBand()
             {
                 BandName = "Pop Band B",
-                YearFormed = 2010,
+                YearFormed = "2013",
                 BandMembers = "sdfasdf"
             };
 
@@ -62,14 +63,14 @@ namespace Week_1
             IndieBand ib1 = new IndieBand()
             {
                 BandName = "Indie Band D",
-                YearFormed = 2010,
+                YearFormed = "2014",
                 BandMembers = "sdfasdf"
             };
 
             IndieBand ib2 = new IndieBand()
             {
                 BandName = "Indie Band C",
-                YearFormed = 2010,
+                YearFormed = "2015",
                 BandMembers = "sdfasdf"
             };
 
@@ -87,6 +88,18 @@ namespace Week_1
             //Display the activities in the listbox
             lbxBands.ItemsSource = null;
             lbxBands.ItemsSource = bands;
+
+
+        }
+
+        private void LbxBands_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Band selectedBand = lbxBands.SelectedItem as Band;
+            if (selectedBand != null)
+            {
+                tblkFormedInfo.Text = selectedBand.YearFormed;
+                tblkMemberInfo.Text = selectedBand.BandMembers;
+            }
         }
     }
 }
