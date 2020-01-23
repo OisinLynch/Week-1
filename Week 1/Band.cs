@@ -43,16 +43,26 @@ namespace Week_1
 
     public class RockBand : Band
     {
+        public override string ToString()
+        {
+            return (this.BandName + " - Rock");
+        }
 
     }
 
     public class PopBand : Band
     {
-
+        public override string ToString()
+        {
+            return (this.BandName + " - Pop");
+        }
     }
 
     public class IndieBand : Band
     {
-
+        public override string ToString()
+        {
+            return (this.BandName + " - Indie");
+        }
     }
 }

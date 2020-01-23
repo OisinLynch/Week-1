@@ -9,16 +9,18 @@
     <Grid>
         <TextBlock x:Name="tblkBands" HorizontalAlignment="Left" Margin="141,78,0,0" TextWrapping="Wrap" Text="Bands" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.341,0.847"/>
         <TextBlock x:Name="tblkGenreSelect" HorizontalAlignment="Left" Margin="141,120,0,0" TextWrapping="Wrap" Text="Genre" VerticalAlignment="Top" RenderTransformOrigin="0.735,0.326"/>
-        <ComboBox x:Name="cmbSelesctGenre" HorizontalAlignment="Left" Margin="203,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbSelectGenre" HorizontalAlignment="Left" Margin="203,120,0,0" VerticalAlignment="Top" Width="120"/>
         <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="176" Margin="141,170,0,0" VerticalAlignment="Top" Width="182" SelectionChanged="LbxBands_SelectionChanged"/>
-        <TextBlock x:Name="tblkBandInfo" HorizontalAlignment="Left" Margin="534,61,0,0" TextWrapping="Wrap" Text="Band Information" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBlock x:Name="tblkBandInfo" HorizontalAlignment="Left" Margin="534,44,0,0" TextWrapping="Wrap" Text="Band Information" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <TextBlock x:Name="tblkFormed" HorizontalAlignment="Left" Margin="534,120,0,0" TextWrapping="Wrap" Text="Formed:" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkMembers" HorizontalAlignment="Left" Margin="534,157,0,0" TextWrapping="Wrap" Text="Members:" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkFormedInfo" HorizontalAlignment="Left" Margin="621,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="tblkMemberInfo" HorizontalAlignment="Left" Margin="634,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkMemberInfo" HorizontalAlignment="Left" Margin="618,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblkAlbum" HorizontalAlignment="Left" Margin="534,196,0,0" TextWrapping="Wrap" Text="Albums" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
         <ListBox HorizontalAlignment="Left" Height="100" Margin="534,246,0,0" VerticalAlignment="Top" Width="170"/>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="629,371,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="tblkBandName" HorizontalAlignment="Left" Margin="534,86,0,0" TextWrapping="Wrap" Text="Name: " VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBandNameInfo" HorizontalAlignment="Left" Margin="618,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -34,14 +34,14 @@ namespace Week_1
             {
                 BandName = "Rock Band F",
                 YearFormed = "2010",
-                BandMembers = "sdfasdf"
+                BandMembers = "sdfasdf, asdad, ASsa, gthth"
             };
 
             RockBand rb2 = new RockBand()
             {
                 BandName = "Rock Band E",
                 YearFormed = "2011",
-                BandMembers = "sdfasdf"
+                BandMembers = "sdfasdf, asdasd"
             };
 
             //Create Pop Bands
@@ -49,14 +49,14 @@ namespace Week_1
             {
                 BandName = "Pop Band A",
                 YearFormed = "2012",
-                BandMembers = "sdfasdf"
+                BandMembers = "sdfasdf, sadad, adas"
             };
 
             PopBand pb2 = new PopBand()
             {
                 BandName = "Pop Band B",
                 YearFormed = "2013",
-                BandMembers = "sdfasdf"
+                BandMembers = "sdfasdf, sdfsdfsdf, sdfsdf"
             };
 
             //Create Indie Bands
@@ -64,14 +64,14 @@ namespace Week_1
             {
                 BandName = "Indie Band D",
                 YearFormed = "2014",
-                BandMembers = "sdfasdf"
+                BandMembers = "sdfasdf, sdfsdf, sdfsdf"
             };
 
             IndieBand ib2 = new IndieBand()
             {
                 BandName = "Indie Band C",
                 YearFormed = "2015",
-                BandMembers = "sdfasdf"
+                BandMembers = "sdfasdf, asdasdasd, asdasdasd",
             };
 
             //Display list in the list box
@@ -89,17 +89,24 @@ namespace Week_1
             lbxBands.ItemsSource = null;
             lbxBands.ItemsSource = bands;
 
+            //Populate the combo box
+            cmbSelectGenre.Items.Add("Rock");
+            cmbSelectGenre.Items.Add("Pop");
+            cmbSelectGenre.Items.Add("Indie");
 
         }
 
+        //CLicking on band name will display year formed and band members
         private void LbxBands_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Band selectedBand = lbxBands.SelectedItem as Band;
             if (selectedBand != null)
             {
+                tblkBandNameInfo.Text = selectedBand.BandName;
                 tblkFormedInfo.Text = selectedBand.YearFormed;
                 tblkMemberInfo.Text = selectedBand.BandMembers;
             }
         }
+
     }
 }
